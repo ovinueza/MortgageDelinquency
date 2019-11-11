@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mortgage Default Task3</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <h1>Hello World</h1>
+  <h5>SELECT Vaccine:</h5>
+  <select id="selVaccine" onchange="vaxChanged(this.value)">
+  </select>
+  <h5>SELECT Country:</h5>
+  <select id="selCountry" onchange="countryChanged(this.value)">
+  </select>
+    <!-- This goes in Regression analysis for Infant Mortality  -->
+      <!-- regression on top -- full width of screen -->
+  <!-- resid and QQ below -- half and half -->
+  <div id = "infRegression"></div>
+  <div id = "infResid"></div>
+  <div id = "infQQ"></div>
+  <!-- <script src="https://cdn.plot.ly/plotly-1.31.2.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src='https://unpkg.com/simple-statistics@7.0.2/dist/simple-statistics.min.js'></script>
+  <!-- <script src="{{ url_for('static', filename='js/bonus.js') }}"></script> -->
+  <script src="{{ url_for('static', filename='js/appTask3.js') }}"></script>
+  
+  
+</body>
+
+</html>
