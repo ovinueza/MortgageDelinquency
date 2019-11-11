@@ -6,32 +6,32 @@ function hazardChart(state) {
  
     var age = haz_result.age;
     console.log("hazard chart: "+age)
-  //   var int_rate = haz_result.int_rate;
-  //   var fit_string_short = `L = ${haz_result.test_int.toFixed(2)} + ${haz_result.test_slope.toFixed(2)}*VC`;
-  //   var test_fit = haz_result.test_fit;
-  //   var int_rate = haz_result.int_rate;
+    var int_rate = haz_result.int_rate;
+    var fit_string_short = `L = ${haz_result.test_int.toFixed(2)} + ${haz_result.test_slope.toFixed(2)}*VC`;
+    var test_fit = haz_result.test_fit;
+    var int_rate = haz_result.int_rate;
 
-  //   // life expectancy regression fit plot
-  //   var trace = { 
-  //     x: age,
-  //     y: int_rate,    
-  //     mode: "markers",
-  //     name: "age"
-  //     }
-  //   var trace_fit = { 
-  //     x: age,
-  //     y: test_fit,
-  //     mode: "lines",
-  //     name: fit_string_short 
+    // life expectancy regression fit plot
+    var trace = { 
+      x: age,
+      y: int_rate,    
+      mode: "markers",
+      name: "age"
+      }
+    var trace_fit = { 
+      x: age,
+      y: test_fit,
+      mode: "lines",
+      name: fit_string_short 
 
-  //   }
-  //   testPlot = [trace,trace_fit];
-  //   var layout = {
-  //     title: "Nonsense Linear Regression Fit",
-  //     xaxis: {title:"Data 1"},
-  //     yaxis: {title:"Data 2"}
-  //   }
-  //   Plotly.newPlot("testRegression",testPlot,layout);
+    }
+    testPlot = [trace,trace_fit];
+    var layout = {
+      title: "Nonsense Linear Regression Fit",
+      xaxis: {title:"Data 1"},
+      yaxis: {title:"Data 2"}
+    }
+    Plotly.newPlot("testRegression",testPlot,layout);
     
  
   });
@@ -52,7 +52,7 @@ function init() {
     const firstState = states[0];
     currentState = firstState;
  
-  // hazardChart(currentState);
+  hazardChart(currentState);
 });
 }
 
@@ -60,7 +60,7 @@ function stateChanged(newState) {
 //   // Fetch new data each time a new sample is selected 
   currentState = newState;
   console.log("Function stateChanged, newState: "+newState)
-  // regressionChart(currentState);
+  regressionChart(currentState);
 }
 
 var currentState = "";
