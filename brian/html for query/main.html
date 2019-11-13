@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untitled Document</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+<form>
+  <table width="100%" border="1">
+    <tbody>
+      <tr>
+        <td><strong>Loan Term:</strong></td>
+        <td>  <div id="RadioButtons1">
+          <input type="radio" name="RadioButtons1" id="Radio1">
+          <label for="Radio1">15 Years</label>
+          <input type="radio" name="RadioButtons1" id="Radio2">
+          <label for="Radio2">20 Years</label>
+          <input type="radio" name="RadioButtons1" id="Radio3">
+          <label for="Radio3">30 Years</label>
+        </div></td>
+      </tr>
+		      <tr>
+        <td><strong>Estimated House Value:</strong></td>
+        <td><input type="text" id="estimatedhousevalue"></td>
+      </tr>
+      <tr>
+        <td><strong>Monthly Income:</strong></td>
+        <td><input type="text" id="monthyincome"></td>
+      </tr>
+      <tr>
+        <td><strong>Monthly Expenses:</strong></td>
+        <td><input type="text" id="monthyexpenses"></td>
+      </tr>
+      <tr>
+        <td><strong>Down Payment:</strong></td>
+        <td><input type="text" id="downpayment"></td>
+      </tr>
+      <tr>
+        <td><strong>Interest Rate:</strong></td>
+        <td><input type="text" id="interestrate"></td>
+      </tr>
+      <tr>
+        <td><strong>Property Taxes & Fees:</strong></td>
+        <td><input type="text" id="propertytaxes"></td>
+      </tr>
+      <tr>
+        <td><strong>Property Insurance:</strong></td>
+        <td><input type="text" id="propertyinsurance"></td>
+      </tr>
+
+    </tbody>
+  </table>
+</form><br><br>
+<div align="center">  <button id="myButton">Calculate Results</button><input type="reset"></div>
+	
+	
+
+<div id="myDialogBox" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>YOU ARE A FAILURE TO SOCIETY! SHAME! SHAME! SHAME!</p>
+  </div>
+
+</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
