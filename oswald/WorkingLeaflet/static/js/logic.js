@@ -19,7 +19,7 @@ L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 // Function that will determine the color of a State based on the NumberOfForeclosures
 function chooseColor(NFORECLOSURES) {
   if (NFORECLOSURES <= 0) {
-      return "#001173";
+      return "#ffffff";
   } else if (NFORECLOSURES <= 10) {
       return "#fff7d9";
   }else if (NFORECLOSURES <= 20) {

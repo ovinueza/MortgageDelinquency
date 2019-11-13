@@ -11,7 +11,8 @@
     NFORECLOSURES>20? "#FED976":
     NFORECLOSURES>10? "#FFEDA0":
     NFORECLOSURES>0? "#fff7d9":
-    "001173"
+    NFORECLOSURES>-1? "#00FFFFFF":
+    "#00FFFFFF"
   };
 
 
@@ -21,6 +22,7 @@
    NFORECLOSURES= [1, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100],
    labels=[];
  //Loop NFORECLOSURES values
+
  for (var i = 0; i < NFORECLOSURES.length; i++) {
    div.innerHTML += '<i style="background:' + getColor(NFORECLOSURES[i] + 1) + '"></i> ' 
    + NFORECLOSURES[i] + (NFORECLOSURES[i + 1] ? '&ndash;' + NFORECLOSURES[i + 1] + '<br>' : '+');
