@@ -37,6 +37,15 @@ function hazardChart(state) {
   });
 } 
 
+function logitChart(state) {
+  var urlLogit = "/model/logisticreg/"+state;
+  d3.json(urlLogit).then(function(logit_result) {
+    console.log("In logistic Regression");
+    var test = logit_result.test;
+    console.log("Did it work? " + test);
+  });
+  }
+
 function init() {
   // Grab a reference to the dropdown select element
   var selectorState = d3.select("#selState");
@@ -53,6 +62,7 @@ function init() {
     currentState = firstState;
  
   hazardChart(currentState);
+  logitChart(currentState);
 });
 }
 
@@ -60,7 +70,8 @@ function stateChanged(newState) {
 //   // Fetch new data each time a new sample is selected 
   currentState = newState;
   console.log("Function stateChanged, newState: "+newState)
-  regressionChart(currentState);
+  hazardChart(currentState);
+  logitChart(currentState);
 }
 
 var currentState = "";
