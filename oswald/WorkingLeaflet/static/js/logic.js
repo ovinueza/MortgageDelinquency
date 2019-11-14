@@ -18,7 +18,7 @@ L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 
 // Function that will determine the color of a State based on the NumberOfForeclosures
 function chooseColor(NFORECLOSURES) {
-  if (NFORECLOSURES <= 0) {
+  if (NFORECLOSURES <= -1) {
       return "#ffffff";
   } else if (NFORECLOSURES <= 10) {
       return "#fff7d9";
@@ -89,8 +89,9 @@ d3.json(link, function(data) {
         }
       });
       // Giving each feature a pop-up with information pertinent to it
-      layer.bindPopup("<h3> Avg Rate: " + feature.properties.AVGINTERESTRATE +", " + feature.properties.STATE+"</h3>"
-      + "<hr>" +"<h3> Foreclosures: " + feature.properties.NFORECLOSURES + "</h3>");
+      layer.bindPopup("<font size=\"3\" > State: " + feature.properties.STATE+"</font>"
+      + "<br>"+"<font size=\"3\" > Avg Interest Rate: " + feature.properties.AVGINTERESTRATE +"</font>"
+     + "<hr>" +"<font size=\"3\" > Foreclosures: " + feature.properties.NFORECLOSURES + "</font>");
     
   
     }
