@@ -1,0 +1,40 @@
+/*-----------------------------------------------------------------------------------
+
+    Theme Name: Canueza - Mortgage Modeling | Machine Learning | Data Analytics
+    Description: One Page Portfolio Template
+    Author: brianjlabelle.yahoo.com
+    Version: 1.0
+
+-----------------------------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+			[ All Css Plugins & Helper Classes File ]
+-----------------------------------------------------------------*/
+
+/* == bootstrap == */
+@import url("plugins/bootstrap.min.css");
+
+/* == animate Headline == */
+@import url("plugins/animate.css");
+
+/* == et-line icon font == */
+@import url("plugins/et-line.css");
+
+/* == icofont icon font == */
+@import url("plugins/icofont.css");
+
+/* == fontawesome icon font == */
+@import url("plugins/fontawesome-all.min.css");
+
+/* == magnific-popup == */
+@import url("plugins/magnific-popup.css");
+
+/* == owl.carousel == */
+@import url("plugins/owl.carousel.min.css");
+@import url("plugins/owl.theme.default.min.css");
+
+/* == helper classes == */
+@import url("plugins/helper.css");
+
+/* == contact form classes == */
+@import url("plugins/mailform.css");
