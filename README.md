@@ -104,8 +104,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ![Canueza](images/005-google-analytics.jpg)
 
-3. AWS RDS ( Amazon Web Services ) was chosen as our cost effective data warehouse based on the amount of data that we would need to run through our machine learning models. The free tier Amazon Linux AMI 2018.03.0 (HVM) was selected based on the default image which includes AWS command line tools, Python, Ruby, Perl, and Java. The repositories include Docker, PHP, MySQL, PostgreSQL, and other packages.
-005-google-analytics2.jpg
+3. We implemented Google Analytics across all html pages inorder to track multiple dimensions.
 
 ![Canueza](images/005-google-analytics2.jpg)
 
