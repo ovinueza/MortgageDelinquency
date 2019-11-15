@@ -64,7 +64,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ![Canueza](images/001-aws-postgres-001.jpg)
 
-2.
+4. Postgres PGAdmin was used to create the SQL tables, ACQ, PER ( Sample Data ), PEREXT ( full data )
+5. Postgres PGAdmin was used to import the TXT files into the created SQL tables. This was done during the proof of concept phase. It would be easily configured to populate Postgres on AWS RDS directly from Pandas.
 
 
 ![Canueza](images/002-data-pgadmin-postgres.jpg)
@@ -86,6 +87,29 @@ Created drop downs to allow a user to choose a vaccine and a country.  Pulled an
 
 # Analysis:  
 As with the time series visualization, drops downs allowed the user to choose a vaccine and country, and the filtered data was store in a path defined in app.py. Conducted regression analysis on the filter data in python using SciPy. Defined a path in app.py to store jsonified regression analysis results. Regression fitplot and related plots to check assumptions were created using Plotly.  Provided description of regression analysis to add to webpage.
+
+
+-----------------------------------------------
+
+# Canueza Marketing | www.canueza.com 
+
+1. As with any corporation, you may have the best product or service, if no ones knows about you or can find you, there's no point. After naming our project with a quick easy portmanteau name, we immedately purchased the domain and secured a website hosting service on hostway.com.
+
+![Canueza](images/004-hostway.jpg)
+
+2. Email addresses were quickly created afterwards to fallicalte communicate between the team and create a source for any outside potential customers / employers to contact us via a professional corporate email address. 
+
+![Canueza](images/005-google-analytics.jpg)
+
+3. AWS RDS ( Amazon Web Services ) was chosen as our cost effective data warehouse based on the amount of data that we would need to run through our machine learning models. The free tier Amazon Linux AMI 2018.03.0 (HVM) was selected based on the default image which includes AWS command line tools, Python, Ruby, Perl, and Java. The repositories include Docker, PHP, MySQL, PostgreSQL, and other packages.
+005-google-analytics2.jpg
+
+![Canueza](images/005-google-analytics.jpg)
+
+3. Social Media accounts were created including Twitter, Linkedin Corporate Pages, Facebook Pages.  Google Analytics was implemented on every html page across . canueza2020@gmail.com
+
+
+004-hostway.jpg
 
 -----------------------------------------------
 
