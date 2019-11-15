@@ -79,16 +79,17 @@ Created the framework of the app.py, template/index.html, static/js/app.js files
 # Leaflet Loans Originated Map
 	1. Leaflet 1.3.3, a JS library
 	2. GeoJSON file was created based off of the Fannie Mae Dataset.
-	3. MapBox map layer is populated by 54 features. Each feature having 8 properties and geometry multi-polygon coordinates.
+	3. MapBox map layer is populated by 54 features. Each feature having 8 properties 
+	   and geometry multi-polygon coordinates.
 	
 	
 
 
 # Time Series Visualization:  
-Created drop downs to allow a user to choose a vaccine and a country.  Pulled and filtered, creating a path to store jsonified data.  Generated Plotly time series line graphs of filtered data.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 # Analysis:  
-As with the time series visualization, drops downs allowed the user to choose a vaccine and country, and the filtered data was store in a path defined in app.py. Conducted regression analysis on the filter data in python using SciPy. Defined a path in app.py to store jsonified regression analysis results. Regression fitplot and related plots to check assumptions were created using Plotly.  Provided description of regression analysis to add to webpage.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 
 -----------------------------------------------
@@ -167,21 +168,11 @@ Python code was developed mainly utilizing Microsoft Visual Studio with Python F
 				- lat long data by country for potential map visualizations
 				
 
-( kindly note that Canueza.herokuapp.com is broken from any future UI updates because of some sort of conflict)	
 
-
-# Aux Web pages.
-
-To fully round out the application, additional content was generated:
-
- - a brief history of the Timeline / History of Vaccines  ( http://Canueza2.herokuapp.com/static/project-history.html )
- - abridged content about the back story of Project 2 ( http://Canueza2.herokuapp.com/static/project-Canueza.html )
-
-![Canueza](images/chart002.jpg)
 
 ## Deployment
 
-Due to the time constraints to get 4 different app.py applications to function on Heroku, it was decided to modularize and setup 1 heroku per app.py and inter-connect them utilizing the hub & spoke philosophy. The theory was that at least we could build on the success as each app.py was deployed as compared to having a single 600+ line of code in a single app to mitigate troubleshooting python code on an unknown Heroku platform and easily bolt on additional visualization as time permitted.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 
 ![Canueza](images/heroku-hub-spoke.jpg)
@@ -213,24 +204,15 @@ Due to the time constraints to get 4 different app.py applications to function o
 	* Heroku Dataclips : JSON
 	
 
-# Heroku - Future Development
+#  Future Development
 ![Canueza](images/highchart-maps.jpg)
 
-An attempt was made to leverage the Heroku platform by using it’s "add on" data store and other misc technologies. From a project software architecture perspective, it was thought that exploiting the built in JSON URL feature would be extremely a great future enhancement. Due to time limitation and complexity of back engineering the highcharts.com technology, Canuezamaps.herokuapp.com was never completed. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
 
-![Canueza](images/heroku-dataclips001.jpg)
 
-![Canueza](images/heroku-dataclips002.jpg)
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-The idea was to write SQL code utilizing latitude and longitude data via a primary key of Country Name to  with the UNICEF data to possibly display the vaccinated populate versus the total population and / or many other possible types of mapping visualizations. 
-
-![Canueza](images/heroku-dataclips004.jpg)
-
-Priority was set to ensure that the primary data analytics charts were successfully being displayed and the maps would be secondary if time permitted. Several attempts with our technical consultant was made to integrate the JSON URL with the HighCharts.com all maps.
-
-https://www.highcharts.com/maps/demo/all-maps
-
-![Canueza](images/heroku-dataclips005.jpg)
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 ## Links
 
