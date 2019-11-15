@@ -58,6 +58,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 1. The Fannie Mae Single-Family Loan Performance Data was downloaded as CSV files from Fannie Mae website.
 
+2. In the master dataset, we ensured referential integrity and brought the data to 3rd normal form. Referntial integrity  states that table relationships must always be consistent. In other words, any foreign key field must agree with the primary key that is referenced by the foreign key. Third normal form (3NF) is a normal form that is used in normalizing a database design to reduce the duplication of data and ensure referential integrity.
+
 2. The data was cleaned using Python Pandas. ( Oswald to provide additional filtering steps taken ).
 
 3. AWS RDS ( Amazon Web Services ) was chosen as our cost effective data warehouse based on the amount of data that we would need to run through our machine learning models. The free tier Amazon Linux AMI 2018.03.0 (HVM) was selected based on the default image which includes AWS command line tools, Python, Ruby, Perl, and Java. The repositories include Docker, PHP, MySQL, PostgreSQL, and other packages.
