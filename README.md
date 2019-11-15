@@ -56,11 +56,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 # Data Management / Cleaning / Flask Coding
 
-![Canueza](images/pgadmin-wuenic-table.jpg)
+![Canueza](images/001-aws-postgres-001.jpg)
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+AWS RDS was chosen based on the amount of data that we would need to house & run through our machine learning models. The free tier Amazon Linux AMI 2018.03.0 (HVM) was selected based on the default image includes AWS command line tools, Python, Ruby, Perl, and Java. The repositories include Docker, PHP, MySQL, PostgreSQL, and other packages.
 
-![Canueza](images/pgadmin-infexpmort-table.jpg)
+![Canueza](images/002-data-pgadmin-postgres.jpg)
 
 # Python Flask coding: 
 Created the framework of the app.py, template/index.html, static/js/app.js files to connect to the ProgresSQL database and create a hello world template to build on.  
@@ -187,7 +187,7 @@ https://www.highcharts.com/maps/demo/all-maps
 
 ## Links
 
- http://Canueza2.herokuapp.com/
+ http://www.canueza.com/
 
 
 
