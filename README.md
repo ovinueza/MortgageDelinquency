@@ -56,14 +56,30 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 # Data Management / Cleaning / Flask Coding
 
+1. The Fannie Mae Single-Family Loan Performance Data was downloaded as CSV files from Fannie Mae website.
+
+2. The data was cleaned using Python Pandas. ( Oswald to provide additional filtering steps taken ).
+
+3. AWS RDS ( Amazon Web Services ) was chosen as our cost effective data warehouse based on the amount of data that we would need to run through our machine learning models. The free tier Amazon Linux AMI 2018.03.0 (HVM) was selected based on the default image which includes AWS command line tools, Python, Ruby, Perl, and Java. The repositories include Docker, PHP, MySQL, PostgreSQL, and other packages.
+
 ![Canueza](images/001-aws-postgres-001.jpg)
 
-AWS RDS was chosen based on the amount of data that we would need to house & run through our machine learning models. The free tier Amazon Linux AMI 2018.03.0 (HVM) was selected based on the default image includes AWS command line tools, Python, Ruby, Perl, and Java. The repositories include Docker, PHP, MySQL, PostgreSQL, and other packages.
+2.
+
 
 ![Canueza](images/002-data-pgadmin-postgres.jpg)
 
 # Python Flask coding: 
 Created the framework of the app.py, template/index.html, static/js/app.js files to connect to the ProgresSQL database and create a hello world template to build on.  
+
+
+# Leaflet Loans Originated Map
+	1. Leaflet 1.3.3, a JS library
+	2. GeoJSON file was created based off of the Fannie Mae Dataset.
+	3. MapBox map layer is populated by 54 features. Each feature having 8 properties and geometry multi-polygon coordinates.
+	
+	
+
 
 # Time Series Visualization:  
 Created drop downs to allow a user to choose a vaccine and a country.  Pulled and filtered, creating a path to store jsonified data.  Generated Plotly time series line graphs of filtered data.
