@@ -104,12 +104,17 @@ As with the time series visualization, drops downs allowed the user to choose a 
 3. AWS RDS ( Amazon Web Services ) was chosen as our cost effective data warehouse based on the amount of data that we would need to run through our machine learning models. The free tier Amazon Linux AMI 2018.03.0 (HVM) was selected based on the default image which includes AWS command line tools, Python, Ruby, Perl, and Java. The repositories include Docker, PHP, MySQL, PostgreSQL, and other packages.
 005-google-analytics2.jpg
 
-![Canueza](images/005-google-analytics.jpg)
+![Canueza](images/005-google-analytics2.jpg)
 
 3. Social Media accounts were created including Twitter, Linkedin Corporate Pages, Facebook Pages.  Google Analytics was implemented on every html page across . canueza2020@gmail.com
 
 
-004-hostway.jpg
+![Canueza](images/006-twitter.jpg)
+
+
+4. The entire site was also search engine optimized.
+
+![Canueza](images/007-seo.jpg)
 
 -----------------------------------------------
 
