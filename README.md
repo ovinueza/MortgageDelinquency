@@ -58,16 +58,16 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 1. The Fannie Mae Single-Family Loan Performance Data was downloaded as CSV files from Fannie Mae website.
 
-2. In the master dataset, we ensured referential integrity and brought the data to 3rd normal form. Referntial integrity  states that table relationships must always be consistent. In other words, any foreign key field must agree with the primary key that is referenced by the foreign key. Third normal form (3NF) is a normal form that is used in normalizing a database design to reduce the duplication of data and ensure referential integrity.
+2. In the master dataset, we ensured referential integrity and brought the data to 3rd normal form. Referential integrity states that table relationships must always be consistent. In other words, any foreign key field must agree with the primary key that is referenced by the foreign key. Third normal form (3NF) is a normal form that is used in normalizing a database design to reduce the duplication of data and ensure referential integrity.
 
-2. The data was cleaned using Python Pandas. ( Oswald to provide additional filtering steps taken ).
+3. The data was cleaned using Python Pandas. ( Oswald to provide additional filtering steps taken ).
 
-3. AWS RDS ( Amazon Web Services ) was chosen as our cost effective data warehouse based on the amount of data that we would need to run through our machine learning models. The free tier Amazon Linux AMI 2018.03.0 (HVM) was selected based on the default image which includes AWS command line tools, Python, Ruby, Perl, and Java. The repositories include Docker, PHP, MySQL, PostgreSQL, and other packages.
+4. AWS RDS ( Amazon Web Services ) was chosen as our cost effective data warehouse based on the amount of data that we would need to run through our machine learning models. The free tier Amazon Linux AMI 2018.03.0 (HVM) was selected based on the default image which includes AWS command line tools, Python, Ruby, Perl, and Java. The repositories include Docker, PHP, MySQL, PostgreSQL, and other packages.
 
 ![Canueza](images/001-aws-postgres-001.jpg)
 
-4. Postgres PGAdmin was used to create the SQL tables, ACQ, PER ( Sample Data ), PEREXT ( full data )
-5. Postgres PGAdmin was used to import the TXT files into the created SQL tables. This was done during the proof of concept phase. It would be easily configured to populate Postgres on AWS RDS directly from Pandas.
+5. Postgres PGAdmin was used to create the SQL tables, ACQ, PER ( Sample Data ), PEREXT ( full data )
+6. Postgres PGAdmin was used to import the TXT files into the created SQL tables. This was done during the proof of concept phase. It would be easily configured to populate Postgres on AWS RDS directly from Pandas.
 
 
 ![Canueza](images/002-data-pgadmin-postgres.jpg)
@@ -98,19 +98,23 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 # Canueza Marketing | www.canueza.com 
 
-1. As with any corporation, you may have the best product or service, if no ones knows about you or can find you, there's no point. After naming our project with a quick easy portmanteau name, we immedately purchased the domain and secured a website hosting service on hostway.com.
+	1. Domain name registration, project branded email addresses, hosted website.
+	2. Search Engine Optimized website, Google Analytics, Google Submitted sitemap.xml & robots.txt. 
+	3. Social Media accounts, Twitter, Linkedin Business Page, Youtube Channel & Facebook page.
+
+1. As with any brand, you may have the best product or service but if no ones knows about you or can find you, there's no point. After uniquely naming our project, we immedately purchased the domain and secured a website hosting service on hostway.com.
 
 ![Canueza](images/004-hostway.jpg)
 
-2. Email addresses were quickly created afterwards to fallicalte communicate between the team and create a source for any outside potential customers / employers to contact us via a professional corporate email address. 
+2. Email addresses were quickly created afterwards to facilitate communications between the team and create a source for any outside potential customers / employers to contact us via a professional corporate email address. First impression perception is everything.
 
 ![Canueza](images/005-google-analytics.jpg)
 
-3. We implemented Google Analytics across all html pages inorder to track multiple dimensions.
+3. We implemented Google Analytics across all html pages inorder to track multiple dimensions. Oswald Vinueza's name ready shows up 5th out of 60k SERPS ( Search Engine Results Pages ) 
 
 ![Canueza](images/005-google-analytics2.jpg)
 
-3. Social Media accounts were created including Twitter, Linkedin Corporate Pages, Facebook Pages.  Google Analytics was implemented on every html page across . canueza2020@gmail.com
+3. Social Media accounts were created including Twitter, Linkedin Corporate Pages, Facebook Pages. Even for this small project, SEO ( Search Engine Optimization) still helps us rank. If anyone 
 
 
 ![Canueza](images/006-twitter.jpg)
