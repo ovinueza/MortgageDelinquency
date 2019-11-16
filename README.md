@@ -189,6 +189,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 * Adobe Premiere Rush v1.2.8 - Video editing
 * WinMerge v2.16.4 - easy side by side code comparison
 * GitHub Desktop v2.2.1 - sharing code
+* Tableau Tableau 2019.3
+* Tableau Prep Builder 2019.3
 
 * Heroku - Platform as a Service - hobby basic plan for 10,000,000 rows of data.
 * Heroku - PostGres Add-on v11 Data Store
