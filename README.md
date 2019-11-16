@@ -72,6 +72,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ![Canueza](images/002-data-pgadmin-postgres.jpg)
 
+![Canueza](images/002-data-pgadmin-postgres2.jpg)
+
 ![Canueza](images/2019-database-perext.jpg)
 
 # Python Flask coding: 
