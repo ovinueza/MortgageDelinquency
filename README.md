@@ -1,4 +1,4 @@
-# Project 3: Mortgage Modeling
+# Mortgage Modeling | apstone Machine Learning Data Analytics Project
 
 ![Canueza](images/rice-cookers-project3.jpg)
 
