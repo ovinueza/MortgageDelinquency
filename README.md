@@ -73,11 +73,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 6. Postgres PGAdmin was used to import the TXT files into the created SQL tables. This was done during the proof of concept phase. It would be easily configured to populate Postgres on AWS RDS directly from Pandas.
 
 
-![Canueza](images/002-data-pgadmin-postgres.jpg)
-
-![Canueza](images/002-data-pgadmin-postgres2.jpg)
-
-![Canueza](images/2019-database-perext.jpg)
 
 # Python Flask coding: 
 Created the framework of the app.py, template/index.html, static/js/app.js files to connect to the ProgresSQL database and create a hello world template to build on.  
@@ -132,7 +127,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 -----------------------------------------------
 
 # TECHNOLOGY UTILIZED:
-![Canueza](images/heroku-postgres.jpg)
 
 ### Prerequisites
 
