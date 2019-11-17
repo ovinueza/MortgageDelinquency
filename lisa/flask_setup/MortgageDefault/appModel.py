@@ -219,7 +219,7 @@ def logitfit(state):
         per_data.CurrentLoanDelinquencyStatus,
         per_data.ForeclosureDate
     ]
-    # state = "TX"
+    state = "TX"
     session =Session(db.engine)
     modelResult = session.query(*selBoth).filter(acq_data.LoanIdentifier == per_data.LoanIdentifier, acq_data.PropertyState==state).order_by(acq_data.LoanIdentifier, per_data.LoanAge).all()
     session.close()
@@ -258,7 +258,7 @@ def logitfit(state):
         BorrowerCreditScoreAtOrigination.append(float(result[10]))
         CoBorrowerCreditScoreAtOrigination.append(float(result[11]))
         LoanAge.append(result[14])
-        RemainingMonthstoMaturity.append(result[15])
+        # RemainingMonthstoMaturity.append(result[15])
         # AdjustedMonthstoMaturity.append(float(result[16]))
         CurrentLoanDelinquencyStatus.append(result[18])
         if result[18] == "D":
@@ -267,36 +267,43 @@ def logitfit(state):
             Delinquent.append(0)
         ForeclosureDate.append(int(result[19]))
 
-    colnames = ["Delinquent","OriginalInterestRate", "OriginalUPB", "OriginalLoanTerm", "OriginalLoanToValueLTV", "PrimaryMortgageInsurancePercent", "OriginalDebtToIncomeRatio", "NumberofBorrowers", "FirstTimeHomeBuyerIndicator", "BorrowerCreditScoreAtOrigination", "CoBorrowerCreditScoreAtOrigination", "LoanAge", "RemainingMonthstoMaturity", "ForeclosureDate"]
+    colnames = ["Delinquent","OriginalInterestRate", "OriginalUPB", "OriginalLoanTerm", "OriginalLoanToValueLTV", "PrimaryMortgageInsurancePercent", "OriginalDebtToIncomeRatio", "NumberofBorrowers", "FirstTimeHomeBuyerIndicator", "BorrowerCreditScoreAtOrigination", "CoBorrowerCreditScoreAtOrigination", "LoanAge", "ForeclosureDate"]
 
     df = pd.DataFrame(zip(Delinquent,OriginalInterestRate, OriginalUPB, OriginalLoanTerm, OriginalLoanToValueLTV, \
         PrimaryMortgageInsurancePercent, OriginalDebtToIncomeRatio, NumberofBorrowers, FirstTimeHomeBuyerIndicator, \
         BorrowerCreditScoreAtOrigination, CoBorrowerCreditScoreAtOrigination, LoanAge, \
-        RemainingMonthstoMaturity, ForeclosureDate), columns = colnames)
+        ForeclosureDate), columns = colnames)
     # print(df["CurrentLoanDelinquencyStatus"].unique())
     #define X and y
     test_df = df.dropna()
     X = test_df.drop("Delinquent", axis=1)
     y = test_df["Delinquent"]
-    
+
     #split data into test and train
     from sklearn.model_selection import train_test_split
     X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=1, stratify=y)
     print(X_train.dtypes)
-    
+
+    from sklearn.preprocessing import StandardScaler
+    # Create a StandardScater model and fit it to the training data
+    X_scaler = StandardScaler().fit(X_train)
+
+    X_train_scaled = X_scaler.transform(X_train)
+    X_test_scaled = X_scaler.transform(X_test)
+
     #Create logistic regression model and fit training data
     from sklearn.linear_model import LogisticRegression
     classifier = LogisticRegression(C = 1e9)
-    classifier.fit(X_train, y_train)
-    train_score = classifier.score(X_train, y_train)
-    test_score = classifier.score(X_test, y_test)
+    classifier.fit(X_train_scaled, y_train)
+    train_score = classifier.score(X_train_scaled, y_train)
+    test_score = classifier.score(X_test_scaled, y_test)
     print("SciKit Learn")
     print(f"Train Score: {train_score}, Test Score: {test_score}")
 
     print(f"Coefficient Estiamtes: {classifier.coef_}")
     import statsmodels.api as sm
-    logit_model=sm.Logit(y_train,X_train)
-    # result=logit_model.fit()
+    logit_model=sm.Logit(y_train,X_train_scaled)
+    result=logit_model.fit()
     # print("StatsModels")
     # print(result.summary2())
     # #calculate summary statisics of train and test data
