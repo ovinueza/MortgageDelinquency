@@ -5,9 +5,8 @@
 
 ## Team members: Lisa Cannon, Oswald Vinueza, Brian Labelle.
 
-## Link
+## Link: http://www.canueza.com/
 
- http://www.canueza.com/
 
 # Data:
 Fannie Mae Single-Family Acquisition and Performance data.
