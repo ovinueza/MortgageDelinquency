@@ -3,8 +3,11 @@
 ![Canueza](images/rice-cookers-project3.jpg)
 
 
-## Team members: Lisa Cannon, Oswald Vinueza, Brian Labelle, 
-## Technical Consultant: xxxxxxxxxxxx
+## Team members: Lisa Cannon, Oswald Vinueza, Brian Labelle.
+
+## Link
+
+ http://www.canueza.com/
 
 # Data:
 Fannie Mae Single-Family Acquisition and Performance data.
@@ -223,7 +226,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-## Links
+## Link
 
  http://www.canueza.com/
 
