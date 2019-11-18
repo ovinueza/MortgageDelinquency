@@ -6,14 +6,17 @@
 <file name="about.html" server="ftp.canueza.com//" local="132167900324083247" remote="132169551000000000" Dst="2" />
 <file name="blog.html" server="ftp.canueza.com//" local="132167900574999584" remote="132169551000000000" Dst="2" />
 <file name="index.html" server="ftp.canueza.com//" local="132169513932560044" remote="132169551600000000" Dst="2" />
-<file name="about.html" server="ftp.canueza.com//www/" local="132182614400720844" remote="132182650200000000" Dst="1" />
-<file name="blog.html" server="ftp.canueza.com//www/" local="132181647504344554" remote="132182649600000000" Dst="1" />
-<file name="index.html" server="ftp.canueza.com//www/" local="132182614488709907" remote="132182650200000000" Dst="1" />
-<file name="data-scientist-lisa-cannon.html" server="ftp.canueza.com//www/" local="132182614401111308" remote="132182650200000000" Dst="1" />
-<file name="data-scientist-oswald-vinueza.html" server="ftp.canueza.com//www/" local="132182614401511002" remote="132182650200000000" Dst="1" />
-<file name="technology-consultant-brian-labelle.html" server="ftp.canueza.com//www/" local="132182614404041268" remote="132182650200000000" Dst="1" />
+<file name="about.html" server="ftp.canueza.com//www/" local="132184020119191314" remote="132184056000000000" Dst="1" />
+<file name="blog.html" server="ftp.canueza.com//www/" local="132184020119541327" remote="132184056000000000" Dst="1" />
+<file name="index.html" server="ftp.canueza.com//www/" local="132184020152081757" remote="132184056000000000" Dst="1" />
+<file name="data-scientist-lisa-cannon.html" server="ftp.canueza.com//www/" local="132184020120401331" remote="132184056000000000" Dst="1" />
+<file name="data-scientist-oswald-vinueza.html" server="ftp.canueza.com//www/" local="132184020120821352" remote="132184056000000000" Dst="1" />
+<file name="technology-consultant-brian-labelle.html" server="ftp.canueza.com//www/" local="132184020123501449" remote="132184056000000000" Dst="1" />
 <file name="missing.html" server="ftp.canueza.com//www/" local="132167928600000000" remote="132167928600000000" Dst="1" />
-<file name="project-proposal.html" server="ftp.canueza.com//www/" local="132180881588300578" remote="132180917400000000" Dst="1" />
-<file name="project-technology-stack.html" server="ftp.canueza.com//www/" local="132182614403394373" remote="132182650200000000" Dst="1" />
-<file name="map.html" server="ftp.canueza.com//www/" local="132182615009126883" remote="132182650800000000" Dst="1" />
+<file name="project-proposal.html" server="ftp.canueza.com//www/" local="132184020122111298" remote="132184056000000000" Dst="1" />
+<file name="project-technology-stack.html" server="ftp.canueza.com//www/" local="132184020122871333" remote="132184056000000000" Dst="1" />
+<file name="sitemap.xml" server="ftp.canueza.com//www/" local="132184020123391319" remote="132184056000000000" Dst="1" />
+<file name="robots.txt" server="ftp.canueza.com//www/" local="132184011888677188" remote="132184047600000000" Dst="1" />
+<file name="data-analytics-map.html" server="ftp.canueza.com//www/" local="132185054304099240" remote="132185089800000000" Dst="1" />
+<file name="data-analytics-tableau.html" server="ftp.canueza.com//www/" local="132184020120091307" remote="132184056000000000" Dst="1" />
 </dwsync>
