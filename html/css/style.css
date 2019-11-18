@@ -1644,3 +1644,7 @@ ul.countdown li {
   .header .caption h1 {
     font-size: 20px;
     margin-top: 5px; } }
+
+.TableauWrapper {
+    height:10%; 
+}
