@@ -9,6 +9,12 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
+<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
 <body>
 
   <h1>Hello World</h1>
@@ -19,7 +25,78 @@
   <!-- This goes in Regression analysis for Life Expenctancy  -->
   <!-- regression on top -- full width of screen -->
   <!-- resid and QQ below -- half and half -->
-  <div id = "testRegression"></div>
+  <body>
+    <div class="container">
+        <div class="jumbotron" style="text-align: center">
+            <h1>Testing user input</h1>
+            <p>Enter your details below!</p>
+        </div>
+        <div class="row">
+            <div class="col-md-offset-2 col-md-8">
+                <form method="POST" action="/" role="form", name="userInput">
+                    <div class="form-group">
+                        <label>OriginalInterestRate</label>
+
+                        <input type="text" class="form-control" name="OriginalInterestRate" placeholder="OriginalInterestRate">
+                    </div>
+                    <div class="form-group">
+                        <label>OriginalUPB</label>
+                        <input type="text" class="form-control" name="OriginalUPB" placeholder="OriginalUPB">
+                    </div>
+                    <div class="form-group">
+                        <label>OriginalLoanTerm</label>
+                        <input type="text" class="form-control" name="OriginalLoanTerm" placeholder="OriginalLoanTerm">
+                    </div>
+                    <div class="form-group">
+                        <label>OriginalLoanToValueLTV</label>
+                        <input type="text" class="form-control" name="OriginalLoanToValueLTV" placeholder="OriginalLoanToValueLTV">
+                    </div>
+                    <div class="form-group">
+                      <label>PrimaryMortgageInsurancePercent</label>
+                      <input type="text" class="form-control" name="PrimaryMortgageInsurancePercent" placeholder="PrimaryMortgageInsurancePercent">
+                  </div>
+                  <div class="form-group">
+                    <label>OriginalDebtToIncomeRatio</label>
+                    <input type="text" class="form-control" name="OriginalDebtToIncomeRatio" placeholder="OriginalDebtToIncomeRatio">
+                </div>
+                <div class="form-group">
+                  <label>NumberofBorrowers</label>
+                  <input type="text" class="form-control" name="NumberofBorrowers" placeholder="NumberofBorrowers">
+              </div>
+              <div class="form-group">
+                <label>FirstTimeHomeBuyerIndicator</label>
+                <input type="text" class="form-control" name="FirstTimeHomeBuyerIndicator" placeholder="FirstTimeHomeBuyerIndicator">
+            </div>
+            <div class="form-group">
+              <label>BorrowerCreditScoreAtOrigination</label>
+              <input type="text" class="form-control" name="BorrowerCreditScoreAtOrigination" placeholder="BorrowerCreditScoreAtOrigination">
+          </div>
+          <div class="form-group">
+            <label>CoBorrowerCreditScoreAtOrigination</label>
+            <input type="text" class="form-control" name="CoBorrowerCreditScoreAtOrigination" placeholder="CoBorrowerCreditScoreAtOrigination">
+        </div>
+        <div class="form-group">
+          <label>LoanAge</label>
+          <input type="text" class="form-control" name="LoanAge" placeholder="LoanAge">
+      </div>
+      <div class="form-group">
+        <label>PropertyState</label>
+        <input type="text" class="form-control" name="PropertyState" placeholder="PropertyState">
+    </div>
+    <div class="form-group">
+      <label>SellerName2</label>
+      <input type="text" class="form-control" name="SellerName2" placeholder="SellerName2">
+  </div>
+                    <input type="submit" value="submit" class="btn btn-default">
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-offset-2 col-md-8">
+                <h1>{{ message }}</h1>
+            </div>
+        </div>
+    </div>
 
   <!-- <script src="https://cdn.plot.ly/plotly-1.31.2.min.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
