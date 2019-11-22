@@ -117,7 +117,10 @@ Created the framework of the app.py, template/index.html, static/js/app.js files
 	3. Geometry obtained from https://www1.ncdc.noaa.gov/pub/data/nidis/geojson/us/base/unitedstates.geojson
 	4. MapBox map layer is populated by 54 features. Each feature having 8 properties 
 	   and geometry multi-polygon coordinates.
-	
+
+# Tableau: 
+Tableau presentation plus addition graphs created from source data can be found [here](https://public.tableau.com/profile/oswald.vinueza#!/vizhome/Project3_15738645799510/FannieMaeDataOverview)
+
 -----------------------------------------------
 
 # Canueza Marketing | www.canueza.com 
