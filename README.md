@@ -114,7 +114,8 @@ Created the framework of the app.py, template/index.html, static/js/app.js files
 # Leaflet Loans Originated Map
 	1. Leaflet 1.3.3, a JS library
 	2. GeoJSON file was created based off of the Fannie Mae Dataset.
-	3. MapBox map layer is populated by 54 features. Each feature having 8 properties 
+	3. Geometry obtained from [NOOA](https://www1.ncdc.noaa.gov/pub/data/nidis/geojson/us/base/unitedstates.geojson)
+	4. MapBox map layer is populated by 54 features. Each feature having 8 properties 
 	   and geometry multi-polygon coordinates.
 	
 -----------------------------------------------
