@@ -89,7 +89,10 @@ Another way to look at the data is to consider how long it takes for a customer 
 
 2. In the master dataset, we ensured referential integrity and brought the data to 3rd normal form. Referential integrity states that table relationships must always be consistent. In other words, any foreign key field must agree with the primary key that is referenced by the foreign key. Third normal form (3NF) is a normal form that is used in normalizing a database design to reduce the duplication of data and ensure referential integrity.
 
-3. The data was cleaned using Python Pandas. ( Oswald to provide additional filtering steps taken ).
+3. The data was cleaned using Python Pandas. We started by concatenating all years into a single Acquisition file and then filtering by Single Family, Principal Residence and Purchase Only, which helped us narrow the scope of this project. 
+Afterwards, we selected the loans from the Performance data, based on the loan identifier from the cleaned Acquisition table. Due to the size of the files it was necessary to break down the selection and cleaning process first by quarter and then concatenating the files by year.
+Finally, to start the machine learning process we took an oversample due to the low percentage of loans with delinquency.
+
 
 4. AWS RDS ( Amazon Web Services ) was chosen as our cost effective data warehouse based on the amount of data that we would need to run through our machine learning models. The free tier Amazon Linux AMI 2018.03.0 (HVM) was selected based on the default image which includes AWS command line tools, Python, Ruby, Perl, and Java. The repositories include Docker, PHP, MySQL, PostgreSQL, and other packages.
 
