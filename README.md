@@ -55,7 +55,11 @@ In order to make predictions about defaulting, more observations of default are 
 
 Running logistic regression using LogisticRegressionCV with the oversampled data provided better results.  While the accuracy number was still high, 91%, the precision of default was improved, though not ideal at 61%. 
 
-A random forest model was fitted using XGBoost provided a very accurate prediction of both defaulting and not defaulting.  
+A decision tree was fitted to the oversampled data set.  In order to see any significant splits that identified delinquency, the depth had to be set at at least 5.  At this depth, the tree is very complex, with 32 nodes, with only 5 of those nodes identifying default.
+
+A random forest model was fitted using XGBoost provided a very accurate prediction of both defaulting and not defaulting (0 and 100%, respectively).
+
+All fitted models seem to be most influenced by the age of a loan. As a loan ages, it's likelihood of defaulting increases.  This might be because once a borrower begins to miss payments, it becomes increasingly hard as time passes to right their account. As the borrower gets further away from the date they qualified for their loan, there is more opportunity for their credit score, or debt to income to change, thus providing more possibility for default as time passes.
 
  
 # Conclusion:
@@ -69,7 +73,7 @@ This initial analysis of the Fannie Mae data uses two modeling techniques to ans
 
 _Further Default Prediction Analysis_
 There are more modeling techniques that might provide better prediction of a borrower defaulting.    A Bayesian forecast technique could be implemented assuming a distribution on the current loan delinquency status from the previous month to predict whether a borrower will default. 
-A Random Search CV method of random forest optimization is thought to yield more robust solutions than the XGB Boost method that was used here.  It would be of interest to compare the accuracy of different random forest modeling methods.
+A RandomizedSearchCV method of random forest optimization is thought to yield more robust solutions than the XGBoost method that was used here.  It would be of interest to compare the accuracy of different random forest modeling methods.
 
 _Data Enhancements_
 This study focuses on a narrow timeline to draw conclusions about defaulting early in the life of a mortgage.  Defaulting is possible at any stage of a loan’s lifetime.  Including data over a broader timeline would create a more robust model could predict default in more mature mortgages.  
