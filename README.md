@@ -47,34 +47,39 @@ In this project we seek to provide a tool that will help a lender to determine i
 
  
  # Analysis:  
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+The focus of this analysis is to develop a loan level model that predicts whether a borrower will default (miss 4 or more payments) on their mortgage based on origination nand performance information available through Fannie Mae.  
+
+Model fitting began with logistic regression on a random sample of Fannie Mae data.  The resulting model had an accuracy score off 99.8%, which seems too good to be true.  When you look at the precision of both outcomes: default or not default.  There was not a single prediction of defaulting.  Thus, not defaulting was predicted with 100% accuracy, and defaulting was predicted with 0% accuracy.  This averaged out to a score of 99.8 because the number of defaults present in the data is very small.
+
+In order to make predictions about defaulting, more observations of default are needed.  Because the model assumes independence among the observations and is not trying to make predictions about the population, but instead a single account, the proportion of loans that defaulted are sampled at a higher rate than loans that do not default.  
+
+Running logistic regression using LogisticRegressionCV with the oversampled data provided better results.  While the accuracy number was still high, 91%, the precision of default was improved, though not ideal at 61%. 
+
+A random forest model was fitted using XGBoost provided a very accurate prediction of both defaulting and not defaulting.  
 
  
 # Conclusion:
-```
 Though several modeling techniques were investigated, the best models to provide a prediction of default were logistic regression and Random Forest using XGBoost.  Both models are used to provide a user with a prediction of default given information enter for an individual loan.
-```
+
 
 # What’s next for analysis?:   
 ![Canueza](images/futuredevelopment.jpg)
-```
+
 This initial analysis of the Fannie Mae data uses two modeling techniques to answer one question, whether a borrower will default.  There are more opportunities for analysis and prediction using this data.  There are also other methods and modifications to the existing analysis that might improve the prediction of default. 
 
-__Further Default Prediction Analysis__
+_Further Default Prediction Analysis_
 There are more modeling techniques that might provide better prediction of a borrower defaulting.    A Bayesian forecast technique could be implemented assuming a distribution on the current loan delinquency status from the previous month to predict whether a borrower will default. 
 A Random Search CV method of random forest optimization is thought to yield more robust solutions than the XGB Boost method that was used here.  It would be of interest to compare the accuracy of different random forest modeling methods.
 
-__Data Enhancements__
+_Data Enhancements_
 This study focuses on a narrow timeline to draw conclusions about defaulting early in the life of a mortgage.  Defaulting is possible at any stage of a loan’s lifetime.  Including data over a broader timeline would create a more robust model could predict default in more mature mortgages.  
 To better capture the regional differences in the economic wellbeing in the country, including an MSA level Case Shiller Index would provide another variable that likely has a high correlation with defaulting trends.
 
-__Additional Questions the Data Can Answer__
+_Additional Questions the Data Can Answer_
 While this study focuses on defaulting (missing 4 or more payments), an early look at delinquency could also be useful.  The likelihood of missing a payment given the current loan delinquency status could be modeled using a Bayesian Logistic Regression, where the current delinquency status has an assumed distribution.
 Another outcome of interest is whether a loan will be prepaid.  It would be interesting to look at factors that are predictive of whether a borrower will prepay their loan.
 Another way to look at the data is to consider how long it takes for a customer to default or miss a payment.  Estimating the time until default could be accomplished using a hazard survival model where defaulting is the event of interest and loans that do not default in the observed time period are considered censored. Considering 3 possible ways for a mortgage to end, payment until maturity, default, and prepay, a competing risk hazard model could predict the time until any event that might result in the loan not reaching maturity. 
 
-
-```
 
 -----------------------------------------------
 
