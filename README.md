@@ -146,30 +146,22 @@ gunicorn 19.9.0
 Python code was developed mainly utilizing Microsoft Visual Studio with Python Flask. 
 4 app.py were created to manage 9 different visualizations. ( map visualizations were not completed.) 
 
-![Canueza](images/chart001.jpg)
-![Canueza](images/chart002.jpg)
 
-	* Canuezatrend.herokuapp.com | World Immunization Trend Chart
-			- Vaccination Coverage 
-			- Life Expectancy / Infant Mortality 
 
-	* Canuezalife.herokuapp.com | Life Expectancy Regression
-			- Life Expectancy Linear Regression Fit
-			- Life Expectancy Normal Q-Q Plot
-			- Life Expectancy Residual Plot
+	* canuezaxxxxx.herokuapp.com | Mortgage Modeling
+			- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+			- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+	* canuezaxxxxx.herokuapp.com | Mortgage Modeling
+			- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 			
-	* Canuezainfant.herokuapp.com | Infant Mortality Regression
-			- Infant Mortality Linear Regression Fit
-			- Infant Mortality Normal Q-Q Plot
-			- Infant Mortality Residual Plot
+	* canuezaxxxx.herokuapp.com | Mortgage Modeling
+			- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 			
-	* Canueza2.herokuapp.com | World Immunization Progress Chart
-			- main app.py to launch the main UI Web App
-
-	* Canueza.herokuapp.com | World Immunization Progress Chart
-			- original heroku web app that still 
-				- houses 70k rows of PostGres Unicef Data
-				- lat long data by country for potential map visualizations
 				
 
 
@@ -179,7 +171,7 @@ Python code was developed mainly utilizing Microsoft Visual Studio with Python F
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 
-![Canueza](images/heroku-hub-spoke.jpg)
+![Canueza FIX PIC](images/heroku-hub-spoke.jpg)
 
 
 
@@ -204,21 +196,28 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 * several video files from Envato.com
 ```
 
-### Not Included in this project but were planned.
-	* [HighCharts.com](https://www.highcharts.com/maps/demo/all-maps)
-	* Heroku Dataclips : SQL
-	* Heroku Dataclips : JSON
+
 	
 
 #  Future Development
-![Canueza](images/highchart-maps.jpg)
+![Canueza](images/futuredevelopment.jpg)
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+This initial analysis of the Fannie Mae data uses two modeling techniques to answer one question, whether a borrower will default.  There are more opportunities for analysis and prediction using this data.  There are also other methods and modifications to the existing analysis that might improve the prediction of default. 
+
+#  Further Default Prediction Analysis
+There are more modeling techniques that might provide better prediction of a borrower defaulting.    A Bayesian forecast technique could be implemented assuming a distribution on the current loan delinquency status from the previous month to predict whether a borrower will default. 
+A Random Search CV method of random forest optimization is thought to yield more robust solutions than the XGB Boost method that was used here.  It would be of interest to compare the accuracy of different random forest modeling methods.
+
+#  Data Enhancements
+This study focuses on a narrow timeline to draw conclusions about defaulting early in the life of a mortgage.  Defaulting is possible at any stage of a loan’s lifetime.  Including data over a broader timeline would create a more robust model could predict default in more mature mortgages.  
+To better capture the regional differences in the economic wellbeing in the country, including an MSA level Case Shiller Index would provide another variable that likely has a high correlation with defaulting trends.
 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+#  Additional Questions the Data Can Answer
+While this study focuses on defaulting (missing 4 or more payments), an early look at delinquency could also be useful.  The likelihood of missing a payment given the current loan delinquency status could be modeled using a Bayesian Logistic Regression, where the current delinquency status has an assumed distribution.
+Another outcome of interest is whether a loan will be prepaid.  It would be interesting to look at factors that are predictive of whether a borrower will prepay their loan.
+Another way to look at the data is to consider how long it takes for a customer to default or miss a payment.  Estimating the time until default could be accomplished using a hazard survival model where defaulting is the event of interest and loans that do not default in the observed time period are considered censored. Considering 3 possible ways for a mortgage to end, payment until maturity, default, and prepay, a competing risk hazard model could predict the time until any event that might result in the loan not reaching maturity. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 ## Link
 
