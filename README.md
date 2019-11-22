@@ -119,7 +119,7 @@ Created the framework of the app.py, template/index.html, static/js/app.js files
 	   and geometry multi-polygon coordinates.
 
 # Tableau: 
-Tableau presentation plus addition graphs created from source data can be found [here](https://public.tableau.com/profile/oswald.vinueza#!/vizhome/Project3_15738645799510/FannieMaeDataOverview)
+Tableau presentation plus additional graphs created from source data can be found [here](https://public.tableau.com/profile/oswald.vinueza#!/vizhome/Project3_15738645799510/FannieMaeDataOverview)
 
 -----------------------------------------------
 
