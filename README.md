@@ -168,41 +168,6 @@ SQLAlchemy 1.2.19
 gunicorn 19.9.0
 ```
 
-### Collaborative Coding Environment
-
-Python code was developed mainly utilizing Microsoft Visual Studio with Python Flask. 
-4 app.py were created to manage 9 different visualizations. ( map visualizations were not completed.) 
-
-
-
-	* canuezaxxxxx.herokuapp.com | Mortgage Modeling
-			- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-			- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-	* canuezaxxxxx.herokuapp.com | Mortgage Modeling
-			- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-			- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-			- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-			
-	* canuezaxxxx.herokuapp.com | Mortgage Modeling
-			- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-			- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-			- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-			
-				
-
-
-
-## Deployment
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-
-![Canueza FIX PIC](images/heroku-hub-spoke.jpg)
-
-
-
-
 ## Tools that were used to built this project:
 ```
 * Visual Studio Code v1.39.2 - code development
@@ -216,7 +181,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 * Tableau Tableau 2019.3
 * Tableau Prep Builder 2019.3
 
-* Heroku - Platform as a Service - hobby basic plan for 10,000,000 rows of data.
+* AWS Ubuntu Server 18.04 LTS (HVM), 
+* Heroku - Platform as a Service -
 * Heroku - PostGres Add-on v11 Data Store
 
 * Ashton Responsive HTML Template from Theme Forest ( Envato.com )
