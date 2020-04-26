@@ -194,7 +194,7 @@ gunicorn 19.9.0
 
 
 
-## Link
+## Link to the project
 
  http://www.canueza.com/
 
